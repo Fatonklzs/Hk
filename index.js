@@ -1139,11 +1139,20 @@ bot.action('main_menu', async (ctx) => {
   const isAdminStatus = isAdmin(ctx.from.id);
   const isOwnerStatus = isOwner(ctx.from.id);
   // Kirim ulang menu utama (Anda dapat menggunakan kode yang sama seperti pada bot.start)
-  const mainMenuMessage = `
+  const runtime = () => {
+  let seconds = Math.floor(process.uptime());
+  let h = Math.floor(seconds / 3600);
+  let m = Math.floor((seconds % 3600) / 60);
+  let s = seconds % 60;
+  return `${h}h ${m}m ${s}s`;
+};
+
+const mainMenuMessage = `
 ┏❐  ⌜ HAMTZY ⌟  ❐
 ┃⭔ Developer : HAMTZY
 ┃⭔ Script : Tutu Official 
 ┃⭔ Version : V2.0
+┃⭔ Runtime : ${runtime()}
 ┗❐`;
 
 const mainKeyboard = [
