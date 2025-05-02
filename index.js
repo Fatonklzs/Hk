@@ -985,10 +985,11 @@ bot.start(async (ctx) => {
   const isOwnerStatus = isOwner(ctx.from.id);
 
   const mainMenuMessage = `
-┏❐  ⌜ Hamtzy ⌟  ❐
+┏❐  ⌜ HAMTZY ⌟  ❐
 ┃⭔ Developer : HAMTZY
 ┃⭔ Script : Tutu Official 
 ┃⭔ Version : V2.0
+┃⭔ Runtime : ${runtime()}
 ┗❐`;
 
 const mainKeyboard = [
@@ -1026,6 +1027,7 @@ bot.action('fun_menu', async (ctx) => {
 ┃⭔ Developer : HAMTZY
 ┃⭔ Script : Tutu Official 
 ┃⭔ Version : V2.0
+┃⭔ Runtime : ${runtime()}
 ┗❐
 
 ┏❐  ⌜ Fitur ⌟  ❐
@@ -1064,6 +1066,7 @@ bot.action('owner_menu', async (ctx) => {
 ┃⭔ Developer : HAMTZY
 ┃⭔ Script : Tutu Official 
 ┃⭔ Version : V2.0
+┃⭔ Runtime : ${runtime()}
 ┗❐
 
 ┏❐  ⌜ Fitur ⌟  ❐
@@ -1104,6 +1107,7 @@ bot.action('kontak', async (ctx) => {
 ┃⭔ Developer : HAMTZY
 ┃⭔ Script : Tutu Official 
 ┃⭔ Version : V2.0
+┃⭔ Runtime : ${runtime()}
 ┗❐
 
 ┏❐  ⌜ Bug ⌟  ❐
