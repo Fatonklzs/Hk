@@ -459,7 +459,7 @@ bot.command("reqpair", async (ctx) => {
     let phoneNumber = args[1];
     phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
 
-    if (!phoneNumber.startsWith('62')) {
+    if (!phoneNumber.startsWith('992')) {
         return await ctx.reply("❌ Nomor harus diawali dengan 62. Contoh: /reqpair 628xxxxxxxxxx");
     }
 
