@@ -1,0 +1,4 @@
+module.exports = {
+  BOT_TOKEN: "7601427387:AAF6T6PT_2R5IH7L2G7DKnPg3soQYk9ZjcU",
+    allowedDevelopers: ['7521582441'], // ID
+};
